@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>订单信息</title>
+	<style>
+		/* 初始化样式忽略 */
+		body {
+			padding: 0;
+			margin: 0;
+		}
+
+		ul {
+			list-style: none;
+			padding: 28px;
+		}
+		/* 初始化样式忽略 */
+
+
+		/* 列表样式开始 */
+		.list {
+			line-height: 96px;
+			font-size: 28px;
+			padding-left: 28px;
+			color: #333;
+			/* border-bottom: 1px solid #ddd;
+			border-top: 1px solid #ddd; */
+		}
+
+		.list li {
+			display: flex;
+			height: 96px;
+			margin-bottom: 28px;
+			/* border-bottom: 1px solid #ddd; */
+		}
+
+		.list li label {
+			width: 18%;
+			/* 文字两端对齐
+			padding-right: 28px;
+			text-align: justify;
+			text-justify: distribute-all-lines;
+			text-align-last: justify; */
+		}
+
+		.list li input {
+			flex: 1;
+			font-size: 28px;
+			border: 1px solid #ddd;
+			padding-left: 28px;
+		}
+		/* .list li:last-child{
+			border: 0;
+		} */
+
+		/* 列表样式结束 */
+
+		/* 按钮样式 */
+		.btn {
+			width: 60%;
+			line-height: 96px;
+			font-size: 36px;
+			color: #fff;
+			text-align: center;
+			background: #ff6600;
+			margin: 0 auto;
+			border-radius: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<ul class="list">
+		<li>
+			<label>姓名</label>
+			<input type="text" placeholder="姓名" />
+		</li>
+		<li>
+			<label>身份账号</label>
+			<input type="text" placeholder="身份账号" />
+		</li>
+		<li>
+			<label>银行卡号</label>
+			<input type="text" placeholder="银行卡号" />
+		</li>
+		<li>
+			<label>订单号</label>
+			<input type="text" placeholder="订单号" />
+		</li>
+	</ul>
+	<div class="btn">完成</div>
+</body>
+
+
+</html>

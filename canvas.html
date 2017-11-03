@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+    <title>认识canvas</title>
+    <style>
+        #mycanvas{border: 1px solid #000;}
+    </style>
+</head>
+
+<body>
+    <canvas id="mycanvas" width="300" height="150">您的浏览器不支持canvas元素，请更新或更换您的浏览器。</canvas>
+</body>
+
+<script type="text/javascript">
+	//jscontent//
+    var mycanvas = document.getElementById('mycanvas');
+    var context = mycanvas.getContext('2d');
+    
+    /*
+    for(var i =0 ;i<=15 ;i++){
+        context.strokeStyle = 'red';
+        context.beginPath();
+        context.arc(0,150,i*10,Math.PI*3/2,true);
+        context.closePath();
+        context.stroke();
+    }
+    */
+    /*顺时针四分之一圆
+    context.strokeStyle='red';
+    context.arc(0,0,100,0,0.5*Math.PI);
+    context.stroke();
+    */
+    /*圆形填充+线条
+    context.fillStyle='#ff00ff';//填充颜色必须放在绘制形状的上面,才有执行效果
+    context.beginPath();//绘圆可省略,其他图形可能会有所差别
+    context.arc(100,75,50,0,Math.PI*2,true);
+    context.closePath();//绘圆可省略,其他图形可能会有所差别
+    context.fill();
+    context.strokeStyle='#ff0';
+    context.stroke();
+    */
+    /*线条矩形并填充线条颜色
+    context.strokeStyle='#000';
+    context.strokeRect(10,10,180,80);
+    */
+    /*矩形并填充颜色
+    context.fillStyle='#ff00ff';
+    context.fillRect(0,0,200,100);
+    */
+    /*线条
+    context.moveTo(0,0);
+    context.lineTo(200,100);
+    context.stroke();
+    */
+</script>
+
+</html>

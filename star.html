@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>五角星评分</title>
+    <style>
+        .star {
+            position: relative;
+            display: block;
+            background: #e9e9e9;
+            width: 250px;
+            height: 50px; 
+        }
+
+        span {
+            display: block;
+            height: 50px; 
+            background: #fa0;
+        }
+
+        .star:before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%; 
+            background: url(images/icon_star.png) repeat-x 0 0;
+            background-size: auto 100%;
+            z-index: 9;
+        }
+    </style>
+</head>
+<div class="star">
+    <span id="star_grade"></span>
+</div>
+<body>
+
+</body>
+
+<script type="text/javascript">
+    //jscontent//
+    var starGrade = document.getElementById('star_grade');
+    var wd = 248/10*8.6;
+    starGrade.style.width = wd +'px';
+</script>
+
+</html>
